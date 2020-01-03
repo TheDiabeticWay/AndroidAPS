@@ -1134,7 +1134,7 @@
     <string name="wear_display_settings">Display Settings</string>
     <string name="wear_general_settings">General Settings</string>
     <string name="enable_nsclient">Enable NSClient</string>
-    <string name="welcometosetupwizard">Welcome to setup wizard. It will guide you through the setup process\n</string>
+    <string name="welcometosetupwizard">Welcome to The Diabetic Way setup wizard. It will guide you through the setup process\n</string>
     <string name="pumpsetup">Pump setup</string>
     <string name="readstatus">Read status</string>
     <string name="adjustprofileinns">Changes must be done in NS</string>

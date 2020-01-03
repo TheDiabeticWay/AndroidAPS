@@ -9,9 +9,9 @@ import info.nightscout.androidaps.logging.L
 import info.nightscout.androidaps.plugins.general.overview.events.EventNewNotification
 import info.nightscout.androidaps.plugins.general.overview.notifications.Notification
 import info.nightscout.androidaps.utils.SP
-import org.apache.http.HttpResponse
-import org.apache.http.client.methods.HttpGet
-import org.apache.http.impl.client.DefaultHttpClient
+// import org.apache.http.HttpResponse
+//import org.apache.http.client.methods.HttpGet
+// import org.apache.http.impl.client.DefaultHttpClient
 import org.slf4j.LoggerFactory
 import java.io.IOException
 import java.io.InputStream
@@ -54,10 +54,10 @@ fun triggerCheckVersion() {
 private fun checkVersion() = if (isConnected()) {
     Thread {
         try {
-            val request = HttpGet("https://raw.githubusercontent.com/MilosKozak/AndroidAPS/master/app/build.gradle")
-            val response: HttpResponse = DefaultHttpClient().execute(request)
-            val version: String? = response.entity.content?.findVersion()
-            compareWithCurrentVersion(version, BuildConfig.VERSION_NAME)
+           // val request = HttpGet("https://raw.githubusercontent.com/MilosKozak/AndroidAPS/master/app/build.gradle")
+           // val response: HttpResponse = DefaultHttpClient().execute(request)
+          //  val version: String? = response.entity.content?.findVersion()
+         //   compareWithCurrentVersion(version, BuildConfig.VERSION_NAME)
         } catch (e: IOException) {
             log.debug("Github master version check error: $e")
         }
